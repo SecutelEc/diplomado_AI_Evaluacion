@@ -18,9 +18,6 @@ st.set_page_config(page_title="Asistente Virtual Mejorado", page_icon="🤖")
 st.title("🤖 Asistente Virtual Mejorado")
 st.write("Habla con el asistente usando tu micrófono. Elige idioma, modelo y voz.")
 
-# Selección de idioma
-idioma = st.selectbox("Idioma de entrada/salida:", [("Español", "es"), ("Inglés", "en"), ("Francés", "fr")], format_func=lambda x: x[0])
-lang_code = idioma[1]
 
 # Selección de modelo
 model_name = st.selectbox("Modelo OpenAI:", ["gpt-4o", "gpt-3.5-turbo"])
@@ -43,7 +40,7 @@ llm = ChatOpenAI(model=model_name, openai_api_key=OPENAI_API_KEY)
 
 # Grabación de voz
 st.write("Presiona el botón y habla:")
-text = speech_to_text(language=lang_code, use_container_width=True, just_once=True, key="stt")
+text = speech_to_text(language="es", use_container_width=True, just_once=True, key="stt")
 
 respuesta = None
 
