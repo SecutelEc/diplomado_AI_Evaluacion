@@ -39,5 +39,4 @@ Habla con el asistente y disfruta de la experiencia conversacional.
 
 ---
 
-**Autor:** Julio Bernal  
 **Versión:** 1.0
