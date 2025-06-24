@@ -16,7 +16,7 @@ client = OpenAI(api_key=OPENAI_API_KEY)
 # Configuración de la página
 st.set_page_config(page_title="Asistente Virtual Mejorado", page_icon="🤖")
 st.title("🤖 Asistente Virtual Mejorado")
-st.write("Habla con el asistente usando tu micrófono. Elige idioma, modelo y voz.")
+st.write("Habla con el asistente usando tu micrófono y parlantes. Elige modelo y voz.")
 
 
 # Selección de modelo
